@@ -1,4 +1,4 @@
 #!/bin/bash
-# hello-go-deploy-amazon-ec2 set-pipeline.sh
+# hello-go-deploy-aws-elastic-beanstalk set-pipeline.sh
 
-fly -t ci set-pipeline -p hello-go-deploy-amazon-ec2 -c pipeline.yml --load-vars-from ../../../../../.credentials.yml
+fly -t ci set-pipeline -p hello-go-deploy-aws-elastic-beanstalk -c pipeline.yml --load-vars-from ../../../../../.credentials.yml

@@ -1,5 +1,5 @@
 #!/bin/sh -e
-# hello-go-deploy-amazon-ec2 unit-tests.sh
+# hello-go-deploy-aws-elastic-beanstalk unit-tests.sh
 
 echo " "
 
