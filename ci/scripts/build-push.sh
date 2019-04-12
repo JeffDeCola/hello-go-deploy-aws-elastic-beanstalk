@@ -32,12 +32,17 @@ echo "List whats in the current directory"
 ls -la
 echo " "
 
-echo "Copy entire repo into dist"
-cp -r hello-go-deploy-aws-elastic-beanstalk/* dist
+echo "Copy example you want to make binary of into dist"
+cp -r hello-go-deploy-aws-elastic-beanstalk/example-01/* dist
 echo " "
 
-echo "Copy the Dockefile in dist/Dockerfile"
+echo "Copy the Dockefile into dist"
 cp dist/example-01/build-push/Dockerfile dist
+
+echo "List whats in /dist"
+cd dist
+ls -la
+echo " "
 
 #echo "Setup the GOPATH based on current directory"
 #export GOPATH=$PWD
