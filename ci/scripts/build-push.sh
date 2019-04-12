@@ -17,8 +17,7 @@ else
     echo " "
 fi
 
-echo "The goal is to create a binary and place in /dist directory with a Dockerfile"
-echo "The concourse pipeline will build and push the docker image to DockerHub"
+echo "The concourse pipeline will build and push the docker image to DockerHub via a DockerFile"
 echo " "
 echo "At start, you should be in a /tmp/build/xxxxx directory with two folders:"
 echo "   /hello-go-deploy-aws-elastic-beanstalk"
@@ -32,7 +31,7 @@ echo "List whats in the current directory"
 ls -la
 echo " "
 
-echo "Copy example you want to make binary of into dist"
+echo "Copy what you want to make binary of (i.e. go build) into dist"
 cp -r hello-go-deploy-aws-elastic-beanstalk/example-01/* dist
 echo " "
 
@@ -88,7 +87,7 @@ echo " "
 #echo " "
 
 echo "The concourse pipeline will build and push the docker image to DockerHub"
-echo "Its funny because you are in a docker image that will build a docker image"
+echo "Its funny because you are in a docker image (on concourse) that will build a docker image"
 echo "Its like the movie inception"
 echo " "
 
