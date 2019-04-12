@@ -96,7 +96,7 @@ in concourse.
 ## STEP 2 - BUILD (DOCKER IMAGE VIA DOCKERFILE)
 
 We will be using a multi-stage build using a Dockerfile.
-The end result will be a small docker image around 13MB.
+The end result will be a very small docker image around 13MB.
 
 ```bash
 docker build -f build-push/Dockerfile -t jeffdecola/hello-go-deploy-aws-elastic-beanstalk .
@@ -104,13 +104,11 @@ docker build -f build-push/Dockerfile -t jeffdecola/hello-go-deploy-aws-elastic-
 
 Obviously, replace `jeffdecola` with your DockerHub username.
 
-### STAGE 1 - GO BUILD IN DOCKER IMAGE
-
-Rather than copy a binary into a docker image (because
+In stage 1, rather than copy a binary into a docker image (because
 that can cause issue), the Dockerfile will build the binary in the
 docker image.
 
-If you open the Dockerfile you can see it will get the dependencies and
+If you open the DockerFile you can see it will get the dependencies and
 build the binary in go,
 
 ```bash
@@ -119,13 +117,11 @@ RUN go get -d -v
 RUN go build -o /go/bin/hello-go-deploy-aws-elastic-beanstalk main.go
 ```
 
-### STAGE 2 - REDUCE THE SIZE OF THE DOCKER IMAGE
-
 In stage 2, the Dockerfile will copy the binary created in
 stage 1 and place into a smaller docker base image based
 on `alpine`, which is around 13MB.
 
-You can check and test your dockerhub image,
+You can check and test your docker image,
 
 ```bash
 docker run --name hello-go-deploy-aws-elastic-beanstalk -dit jeffdecola/hello-go-deploy-aws-elastic-beanstalk
