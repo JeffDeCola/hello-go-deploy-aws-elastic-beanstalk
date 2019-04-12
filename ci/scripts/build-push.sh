@@ -37,7 +37,7 @@ cp -r hello-go-deploy-aws-elastic-beanstalk/example-01/* dist
 echo " "
 
 echo "Copy the Dockefile into dist"
-cp dist/example-01/build-push/Dockerfile dist
+cp dist/build-push/Dockerfile dist
 
 echo "List whats in /dist"
 cd dist
@@ -88,6 +88,8 @@ echo " "
 #echo " "
 
 echo "The concourse pipeline will build and push the docker image to DockerHub"
+echo "Its funny because you are in a docker image that will build a docker image"
+echo "Its like the movie inception"
 echo " "
 
 echo "build-push.sh (END)"
