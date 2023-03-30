@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 # hello-go-deploy-aws-elastic-beanstalk destroy-pipeline.sh
 
-fly -t ci destroy-pipeline --pipeline hello-go-deploy-aws-elastic-beanstalk
+echo " "
+echo "Destroy pipeline on target jeffs-ci-target which is team jeffs-ci-team"
+fly --target jeffs-ci-target \
+    destroy-pipeline \
+    --pipeline hello-go-deploy-aws-elastic-beanstalk
+echo " "
