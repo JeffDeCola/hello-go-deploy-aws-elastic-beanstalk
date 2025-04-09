@@ -1,13 +1,11 @@
 # HELLO GO DEPLOY AWS ELASTIC BEANSTALK
 
 [![Tag Latest](https://img.shields.io/github/v/tag/jeffdecola/hello-go-deploy-aws-elastic-beanstalk)](https://github.com/JeffDeCola/hello-go-deploy-aws-elastic-beanstalk/tags)
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 [![Go Reference](https://pkg.go.dev/badge/github.com/JeffDeCola/hello-go-deploy-aws-elastic-beanstalk.svg)](https://pkg.go.dev/github.com/JeffDeCola/hello-go-deploy-aws-elastic-beanstalk)
 [![Go Report Card](https://goreportcard.com/badge/github.com/JeffDeCola/hello-go-deploy-aws-elastic-beanstalk)](https://goreportcard.com/report/github.com/JeffDeCola/hello-go-deploy-aws-elastic-beanstalk)
-[![codeclimate Maintainability](https://api.codeclimate.com/v1/badges/ce328e08ef7038607b16/maintainability)](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-aws-elastic-beanstalk/maintainability)
-[![codeclimate Issue Count](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-aws-elastic-beanstalk/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-aws-elastic-beanstalk/issues)
 [![Docker Pulls](https://badgen.net/docker/pulls/jeffdecola/hello-go-deploy-aws-elastic-beanstalk?icon=docker&label=pulls)](https://hub.docker.com/r/jeffdecola/hello-go-deploy-aws-elastic-beanstalk/)
-[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
-[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 
 ```text
 *** THE DEPLOY IS UNDER CONSTRUCTION - CHECK BACK SOON ***
